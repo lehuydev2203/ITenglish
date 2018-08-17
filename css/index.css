@@ -1,0 +1,629 @@
+body{
+    margin :0px;padding:0px;
+}
+
+/************************************************/
+/******************  #header  ******************/
+/************************************************/
+
+#menu{
+    width: 100%;
+    height: 60px;
+    float :right;
+    position: relative;
+    z-index: 10;
+}
+
+#headerbg{
+    background-color: #000000;
+    width: 100%;
+    height: 60px;
+    opacity:0.3;
+    position: absolute;
+    z-index: 10;
+}
+#ic-menu{
+   float :right;
+    margin: 20px;
+}
+
+/************************************************/
+/******************  #ic-menu  ******************/
+/************************************************/
+
+#ic-menu input
+{
+    float :right;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    top:11px;
+    right:12px;
+    opacity: 0; /* hide this */
+    z-index: 10; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#ic-menu span{
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 10;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#ic-menu span:first-child{
+    transform-origin: 0% 0%;
+}
+#ic-menu span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+#ic-menu input:checked ~ span{
+    opacity: 1;
+    transform: rotate(-45deg) translate(-1px, -5px);
+    background: white;
+    width: 32px;
+}
+#ic-menu input:checked ~ span:nth-last-child(3){
+    opacity: 1;
+    width: 32px;
+    transform: rotate(45deg) translate(-1px, 1px);
+}
+#ic-menu input:checked ~ span:nth-last-child(2){
+    opacity: 0; transform: rotate(0deg) scale(0.1, -0.1) ;
+    transition: 0.5s
+}
+
+#sidebarMenu ul li {
+    display: block;
+    float: left;
+    text-decoration: none;
+    list-style-type: none;
+}
+#sidebarMenu ul li:hover {
+    display: block;
+    float: left;
+    background-color: gray;
+}
+#sidebarMenu ul li a{
+    margin: 10px 20px;
+    padding : auto;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#sidebarMenu a:hover{
+    color : #00DCFF;
+}
+
+#sidebarMenu ul{
+    padding:0px;
+    margin:8px;
+    transition: width 2s;
+}
+#sidebarMenu  {
+
+    height: 50px;
+    position: absolute;
+    z-index:10;
+    left: 0;
+    bottom: 0;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:384px) {
+
+    #sidebarMenu ul li a{
+        margin: 5px 10px;
+        font-size:15px}
+
+}
+@media only screen and (max-width:375px) {
+
+    #sidebarMenu ul li a{
+        margin: 5px 10px;
+        font-size:15px}
+}
+@media only screen and (max-width:320px) {
+
+    #sidebarMenu ul li a{
+        margin: 5px 10px;
+        font-size:15px}
+    #sidebarMenu {
+        margin-left: 5px;
+        font-size:15px}
+    #ic-menu{
+        float :right;
+        margin: 20px 5px 20px 5px;
+    }
+}
+
+
+/************************************************/
+/******************  #Main home  ****************/
+/************************************************/
+
+#main{
+    position:relative;
+    z-index: 3;
+}
+#header-title>h1{
+    font-size:100px;
+    text-align: center;
+    margin:auto;
+    margin-bottom:50px;
+    color:white;
+    font-family: Comic Sans MS;
+}
+section form{
+    position:relative;
+    width: 80%;
+    height:50px;
+    border-radius: 50px;
+    background-color: white;
+    padding:10px 20px;
+    margin:auto;
+}
+section form input{
+    position:absolute;
+    z-index: 1;
+    border:1px;
+    box-shadow:0 0 0;border-radius: 50px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color:#ccc;
+    width: 90%;
+    height:50px;
+    border-radius: 50px;
+    background-color: white;
+    padding:10px 20px;
+    margin-top:-10px;
+    left:10px;
+    outline: none;
+ }
+section form input:hover{
+    box-shadow:0 0 0;
+    border-radius: 50px;
+ }
+section form button{
+    position:absolute;
+    z-index: 4;
+    right: 20px;
+    border: 0;
+    background-color: inherit;
+    margin-top: 1px;
+
+ }
+section form button:hover{
+    cursor: pointer;
+ }
+section form button:active{
+    cursor: pointer;
+    border-style: none;
+    box-shadow: none;
+ }
+section form button span{
+    font-size: 25px;
+    color: #00ffba;
+    outline: none;border: 0;
+ }
+
+@media only screen and (max-width:970px) {
+
+    #header-title>h1{
+        width:400px;
+        text-align: center;
+        font-size: 80px;
+        padding-top:50px;
+        margin-bottom:30px;
+    }}
+@media only screen and (max-width:860px) {
+
+    #header-title>h1{
+        width:400px;
+        text-align: center;
+        font-size: 80px;
+        padding-top:50px;
+        margin-bottom:30px;
+    }}
+@media only screen and (max-width:740px) {
+
+    #header-title>h1{
+        width:300px;
+        text-align: center;
+        font-size: 60px;
+        padding-top:50px;
+        margin-bottom:30px;
+    }}
+@media only screen and (max-width:700px) {
+
+    #header-title>h1{
+        width:300px;
+        text-align: center;
+        font-size: 60px;
+        padding-top:50px;
+        margin-bottom:30px;
+    }
+}
+@media only screen and (max-width:650px) {
+
+    #header-title>h1{
+        width:300px;
+        text-align: center;
+        font-size: 60px;
+        padding-top:50px;
+        margin-bottom:30px;
+    }
+}
+@media only screen and (max-width:603px) {
+
+    #header-title>h1{
+        width:300px;
+        text-align: center;
+        font-size: 60px;
+        padding-top:50px;
+        margin-left:110px;
+        margin-bottom:30px;
+    }
+}
+@media only screen and (max-width:500px) {
+
+    #header-title>h1{
+        width:300px;
+        text-align: center;
+        font-size: 60px;
+        padding-top:50px;
+        margin-left:75px;
+        margin-bottom:30px;
+    }
+}
+@media only screen and (max-width:420px) {
+
+    #header-title>h1{
+        width:300px;
+        text-align: center;
+        font-size: 50px;
+        padding-top:50px;
+        margin-left: 40px;
+        margin-bottom:30px;
+    }
+}
+@media only screen and (max-width:400px) {
+
+    #header-title>h1{
+        width:300px;
+        text-align: center;
+        font-size: 50px;
+        padding-top:50px;
+        margin-left: 30px;
+        margin-bottom:30px;
+    }
+}
+@media only screen and (max-width:380px) {
+
+    #header-title>h1{
+        width:300px;
+        text-align: center;
+        font-size: 50px;
+        padding-top:50px;
+        margin-left: 20px;
+        margin-bottom:30px;
+    }
+}
+@media only screen and (max-width:320px) {
+
+    #header-title>h1{
+        width:200px;
+        text-align: center;
+        font-size: 40px;
+        margin-left: 45px;
+        margin-bottom:30px;
+    }
+}
+
+
+/************************************************/
+/******************  #Main About  ****************/
+/************************************************/
+
+
+#about-infor h6{line-height: 30px}
+#about-infor h4{margin-bottom:20px}
+#about-infor h1{margin-bottom:10px}
+#about-avat{width:300px;margin-bottom: 25px}
+#about-form{width: 80%;margin:auto;height: 600px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+#about-infor{width: 94%;text-align: center;position: absolute;z-index: 5;opacity: 1;color:white ;margin-top:-575px}
+
+
+@media only screen and (max-width:1050px) {
+    #about-infor h6{line-height: 30px;width: 100%;}
+    #about-infor h4{margin-bottom:20px;width: 100%}
+    #about-infor h1{margin-bottom:10px;width: 100%;}
+    #about-form{width: 300px;margin:auto;margin-top: 65px;margin-bottom:40px;margin-left:300px;height: 525px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:326px;z-index: 5;opacity: 1;color:white ;margin-top:-525px}
+    #about-avat{width:150px;}
+}
+@media only screen and (max-width:970px) {
+    #about-infor h6{line-height: 30px;width: 100%;}
+    #about-infor h4{margin-bottom:20px;width: 100%}
+    #about-infor h1{margin-bottom:10px;width: 100%;}
+    #about-form{width: 300px;margin:auto;margin-top: 65px;margin-bottom:40px;margin-left:180px;height: 525px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:206px;z-index: 5;opacity: 1;color:white ;margin-top:-525px}
+    #about-avat{width:150px;}
+}
+@media only screen and (max-width:860px) {
+    #about-infor h6{line-height: 25px;width:300px}
+    #about-infor h4{margin-bottom:5px;width:300px}
+    #about-infor h1{margin-bottom:15px;width:300px}
+    #about-form{width: 300px;margin:auto;margin-top: 65px;margin-bottom:40px;margin-left:90px;height: 425px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:92px;z-index: 5;opacity: 1;color:white ;margin-top:-425px}
+    #about-avat{width:150px;margin-left:45px;}
+}
+@media only screen and (max-width:853px) {
+    #about-infor h6{line-height: 25px;width:300px}
+    #about-infor h4{margin-bottom:5px;width:300px}
+    #about-infor h1{margin-bottom:15px;width:300px}
+    #about-form{width: 300px;margin:auto;margin-top: 65px;margin-bottom:40px;margin-left:190px;height: 425px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:192px;z-index: 5;opacity: 1;color:white ;margin-top:-425px}
+    #about-avat{width:150px;margin-left:45px;}
+}
+@media only screen and (max-width:740px) {
+    #about-infor h6{line-height: 25px;width:300px}
+    #about-infor h4{margin-bottom:5px;width:300px}
+    #about-infor h1{margin-bottom:15px;width:300px}
+    #about-form{width: 300px;margin:auto;margin-top: 65px;margin-bottom:40px;margin-left:90px;height: 425px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:92px;z-index: 5;opacity: 1;color:white ;margin-top:-425px}
+    #about-avat{width:150px;margin-left:45px;}
+}
+@media only screen and (max-width:700px) {
+    #about-infor h6{line-height: 25px;width:300px}
+    #about-infor h4{margin-bottom:5px;width:300px}
+    #about-infor h1{margin-bottom:15px;width:300px}
+    #about-form{width: 300px;margin:auto;margin-top: 65px;margin-bottom:40px;margin-left:90px;height: 425px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:92px;z-index: 5;opacity: 1;color:white ;margin-top:-425px}
+    #about-avat{width:150px;margin-left:45px;}
+}
+@media only screen and (max-width:650px) {
+    #about-infor h6{line-height: 25px;width:300px}
+    #about-infor h4{margin-bottom:5px;width:300px}
+    #about-infor h1{margin-bottom:15px;width:300px}
+    #about-form{width: 300px;margin:auto;margin-top: 65px;margin-bottom:40px;margin-left:90px;height: 425px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:92px;z-index: 5;opacity: 1;color:white ;margin-top:-425px}
+    #about-avat{width:150px;margin-left:45px;}
+}
+@media only screen and (max-width:603px) {
+    #about-infor h6{line-height: 25px;width:300px}
+    #about-infor h4{margin-bottom:5px;width:300px}
+    #about-infor h1{margin-bottom:15px;width:300px}
+    #about-form{width: 300px;margin:auto;margin-top: 65px;margin-bottom:40px;margin-left:90px;height: 425px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:92px;z-index: 5;opacity: 1;color:white ;margin-top:-425px}
+    #about-avat{width:150px;margin-left:45px;}
+}
+@media only screen and (max-width:500px) {
+    #about-infor h6{line-height: 30px;width:300px}
+    #about-infor h4{margin-bottom:10px;width:300px}
+    #about-infor h1{margin-bottom:50px;width:300px}
+    #about-form{width: 300px;margin:auto;margin-top: 60px;margin-bottom:40px;margin-left:56px;height: 550px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:58px;z-index: 5;opacity: 1;color:white ;margin-top:-525px}
+    #about-avat{width:200px;margin-left:45px;}
+}
+@media only screen and (max-width:420px) {
+    #about-infor h6{line-height: 30px;width:300px}
+    #about-infor h4{margin-bottom:10px;width:300px}
+    #about-infor h1{margin-bottom:50px;width:300px}
+    #about-form{width: 300px;margin:auto;margin-top: 50px;margin-left:24px;height: 550px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:26px;z-index: 5;opacity: 1;color:white ;margin-top:-525px}
+    #about-avat{width:200px;margin-left:45px;}
+}
+@media only screen and (max-width:400px) {
+    #about-infor h6{line-height: 30px;width:300px}
+    #about-infor h4{margin-bottom:10px;width:300px}
+    #about-infor h1{margin-bottom:50px;width:300px}
+    #about-form{width: 300px;margin:auto;margin-top: 50px;margin-left:12px;height: 550px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:14px;z-index: 5;opacity: 1;color:white ;margin-top:-525px}
+    #about-avat{width:200px;margin-left:45px;}
+}
+@media only screen and (max-width:380px) {
+    #about-infor h6{line-height: 30px;width:300px}
+    #about-infor h4{margin-bottom:10px;width:300px}
+    #about-infor h1{margin-bottom:50px;width:300px}
+    #about-form{width: 300px;margin:auto;margin-top: 65px;margin-left:2px;height: 525px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:4px;z-index: 5;opacity: 1;color:white ;margin-top:-500px}
+    #about-avat{width:200px;margin-left:45px;}
+}
+@media only screen and (max-width:320px) {
+    #about-infor h6{line-height: 25px;font-size:14px;width:250px}
+    #about-infor h4{margin-bottom:10px;font-size:20px;width:250px}
+    #about-infor h1{margin-bottom:10px;width:250px}
+    #about-form{width: 250px;margin:auto;margin-top: 65px;margin-left:4px;height: 400px;background: white;opacity: 0.2;position: relative;z-index: 4; border-radius: 25px}
+    #about-infor{width: 250px;text-align: center;position: absolute;margin-left:6px;z-index: 5;opacity: 1;color:white ;margin-top:-375px}
+    #about-avat{width:150px;margin-left:-5px;margin-bottom:15px !important;}
+}
+
+
+/************************************************/
+/****************  #Main Sign In  ***************/
+/************************************************/
+
+#signin form {border:1px white solid;border-radius: 10px;border-top:none;}
+#signin h2{color:#00ffba;text-align: center;background-color: white;height: 60px;padding:10px;border-radius:10px;}
+#signin h5{color:white;margin: 5%;}
+#signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+
+.sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+.sign-submit2{margin-left: 53%}
+
+
+@media only screen and (max-width:1024px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:600px;margin-left:30px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 56%;
+    }
+    }
+@media only screen and (max-width:853px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:600px;margin-left:30px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 56%;
+    }
+    }
+@media only screen and (max-width:800px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;margin-left:30px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 47%;
+    }
+    }
+@media only screen and (max-width:768px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;margin-left:10px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 308px;
+    }
+    }
+@media only screen and (max-width:736px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:440px;margin-left:10px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:440px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 43%;
+    }
+    }
+@media only screen and (max-width:700px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:100px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 100px;
+    }
+    }
+@media only screen and (max-width:650px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:100px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 100px;
+    }
+    }
+@media only screen and (max-width:603px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:100px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 100px;
+    }
+    }
+@media only screen and (max-width:580px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:100px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 100px;
+    }
+    }
+@media only screen and (max-width:540px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:90px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 100px;
+    }
+    }
+@media only screen and (max-width:480px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:60px;margin-top:60px;margin-bottom: 40px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 100px;
+    }
+    }
+@media only screen and (max-width:420px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;margin:25px;width:340px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 100px;
+    }
+    }
+@media only screen and (max-width:400px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;margin:25px;width:300px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:300px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 65px;
+    }
+    }
+@media only screen and (max-width:380px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;margin:25px;width:300px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:300px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 65px;
+    }
+    }
+@media only screen and (max-width:360px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:280px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:280px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 45px;
+    }
+}
+@media only screen and (max-width:320px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:240px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:240px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 10px;
+    }
+}
