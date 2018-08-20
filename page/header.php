@@ -42,6 +42,7 @@ if(isset($_GET['page'])){
 
 </head>
 <body >
+<div>
     <header>
         <div id="menu" >
             <div id="headerbg"></div>
@@ -61,5 +62,6 @@ if(isset($_GET['page'])){
             </nav>
         </div>
     </header>
+</div>
 
 
