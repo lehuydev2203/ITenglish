@@ -17,6 +17,9 @@
     case('signin'):
         include_once ('page/pLogin.php');
         break;
+    case('key'):
+        include_once ('page/pKey.php');
+        break;
     default;
         include_once ('page/error404.php');
-}
+}?>

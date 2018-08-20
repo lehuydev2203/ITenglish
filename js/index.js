@@ -14,8 +14,8 @@ function backgroundimages(){
 
     document.body.style.background = "url('img/church-background.jpg' ) no-repeat center fixed";
     document.body.style.backgroundSize ="cover";
-    console.log("Đây Là Sản Phẩm Của Lê Huy -  https://examhtmlcss.000webhostapp.com/contact - https://www.facebook.com/lehuy.roxyproduction ");
     document.getElementById("sidebarMenu").style.display="none";//script hide menu
+    console.log("Đây Là Sản Phẩm Của Lê Huy -  https://examhtmlcss.000webhostapp.com/contact - https://www.facebook.com/lehuy.roxyproduction ");
 }
 
 /************************************************/

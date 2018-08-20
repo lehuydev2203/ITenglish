@@ -23,8 +23,11 @@ body{
     z-index: 10;
 }
 #ic-menu{
-   float :right;
+    float: right;
     margin: 20px;
+    position: absolute;
+    right: 1px;
+    z-index: 11;
 }
 
 /************************************************/
@@ -33,17 +36,17 @@ body{
 
 #ic-menu input
 {
-    float :right;
+    float: right;
     display: block;
     width: 50px;
     height: 50px;
     position: absolute;
     cursor: pointer;
-    top:11px;
-    right:12px;
-    opacity: 0; /* hide this */
-    z-index: 10; /* and place it over the hamburger */
-    -webkit-touch-callout: none;
+    top: 5px;
+    right: 5px;
+    opacity: 0;
+    z-index: 12;
+    margin: -15px -10px;
 }
 
 /*
@@ -57,7 +60,7 @@ body{
     position: relative;
     background: white;
     border-radius: 3px;
-    z-index: 10;
+    z-index: 11;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
     background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -193,11 +196,11 @@ section form input{
     margin-top:-10px;
     left:10px;
     outline: none;
- }
+}
 section form input:hover{
     box-shadow:0 0 0;
     border-radius: 50px;
- }
+}
 section form button{
     position:absolute;
     z-index: 4;
@@ -206,20 +209,20 @@ section form button{
     background-color: inherit;
     margin-top: 1px;
 
- }
+}
 section form button:hover{
     cursor: pointer;
- }
+}
 section form button:active{
     cursor: pointer;
     border-style: none;
     box-shadow: none;
- }
+}
 section form button span{
     font-size: 25px;
     color: #00ffba;
     outline: none;border: 0;
- }
+}
 
 @media only screen and (max-width:970px) {
 
@@ -476,7 +479,7 @@ section form button span{
     .sign-submit2{
         margin-left: 56%;
     }
-    }
+}
 @media only screen and (max-width:853px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:600px;margin-left:30px;margin-top:60px;margin-bottom: 40px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;font-size:20px;padding:10px;border-radius:10px;}
@@ -486,7 +489,7 @@ section form button span{
     .sign-submit2{
         margin-left: 56%;
     }
-    }
+}
 @media only screen and (max-width:800px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;margin-left:30px;margin-top:60px;margin-bottom: 40px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;font-size:20px;padding:10px;border-radius:10px;}
@@ -496,7 +499,7 @@ section form button span{
     .sign-submit2{
         margin-left: 47%;
     }
-    }
+}
 @media only screen and (max-width:768px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;margin-left:10px;margin-top:60px;margin-bottom: 40px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;font-size:20px;padding:10px;border-radius:10px;}
@@ -506,7 +509,7 @@ section form button span{
     .sign-submit2{
         margin-left: 308px;
     }
-    }
+}
 @media only screen and (max-width:736px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:440px;margin-left:10px;margin-top:60px;margin-bottom: 40px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:440px;font-size:20px;padding:10px;border-radius:10px;}
@@ -516,7 +519,7 @@ section form button span{
     .sign-submit2{
         margin-left: 43%;
     }
-    }
+}
 @media only screen and (max-width:700px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:100px;margin-top:60px;margin-bottom: 40px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
@@ -526,7 +529,7 @@ section form button span{
     .sign-submit2{
         margin-left: 100px;
     }
-    }
+}
 @media only screen and (max-width:650px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:100px;margin-top:60px;margin-bottom: 40px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
@@ -536,7 +539,7 @@ section form button span{
     .sign-submit2{
         margin-left: 100px;
     }
-    }
+}
 @media only screen and (max-width:603px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:100px;margin-top:60px;margin-bottom: 40px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
@@ -546,7 +549,7 @@ section form button span{
     .sign-submit2{
         margin-left: 100px;
     }
-    }
+}
 @media only screen and (max-width:580px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:100px;margin-top:60px;margin-bottom: 40px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
@@ -556,7 +559,7 @@ section form button span{
     .sign-submit2{
         margin-left: 100px;
     }
-    }
+}
 @media only screen and (max-width:540px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:90px;margin-top:60px;margin-bottom: 40px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
@@ -566,7 +569,7 @@ section form button span{
     .sign-submit2{
         margin-left: 100px;
     }
-    }
+}
 @media only screen and (max-width:480px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:340px;margin-left:60px;margin-top:60px;margin-bottom: 40px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
@@ -576,7 +579,7 @@ section form button span{
     .sign-submit2{
         margin-left: 100px;
     }
-    }
+}
 @media only screen and (max-width:420px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;margin:25px;width:340px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:340px;font-size:20px;padding:10px;border-radius:10px;}
@@ -586,7 +589,7 @@ section form button span{
     .sign-submit2{
         margin-left: 100px;
     }
-    }
+}
 @media only screen and (max-width:400px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;margin:25px;width:300px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:300px;font-size:20px;padding:10px;border-radius:10px;}
@@ -596,7 +599,7 @@ section form button span{
     .sign-submit2{
         margin-left: 65px;
     }
-    }
+}
 @media only screen and (max-width:380px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;margin:25px;width:300px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:300px;font-size:20px;padding:10px;border-radius:10px;}
@@ -606,7 +609,7 @@ section form button span{
     .sign-submit2{
         margin-left: 65px;
     }
-    }
+}
 @media only screen and (max-width:360px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:280px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:280px;font-size:20px;padding:10px;border-radius:10px;}

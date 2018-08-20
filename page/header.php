@@ -37,17 +37,16 @@ if(isset($_GET['page'])){
         }
         ?></title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
-    <!-- development version, includes helpful console warnings -->
+
 </head>
 <body >
     <header>
         <div id="menu" >
             <div id="headerbg"></div>
             <div align="left" id="ic-menu">
-                <input type="checkbox" id="checkbox" onclick="menu()">
+                <input type="checkbox" id="checkbox"  onclick="menu()">
                 <span></span>
                 <span></span>
                 <span></span>
