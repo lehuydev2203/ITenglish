@@ -637,3 +637,32 @@ section form button span{
 
 /*.keykg{background-color:white;opacity:0.3;width:100%;height:976.391px;border-radius:.3rem;margin:0px;padding:0px;position:absolute;z-index:-1 }*/
 /*.content_key{background-color: inherit; width: 100%;color:white;position:relative;z-index:0;border:0}*/
+.keyword{border:1px solid darkgray;border-radius:20px;margin:auto;padding:20px 40px;color:white}
+.border_right{border-right:1px solid #00ffba}
+@media only screen and (max-width:380px) {
+
+    .keyword{border:1px solid darkgray;border-radius:20px;margin:auto;padding:5px 10px;color:white}
+    .modal-footer>h6{font-size: 13px}
+    .border_right{border-right:0}
+    .pic_Respon{margin-bottom: 15px}
+}
+@media only screen and (max-width:360px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:280px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:280px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 45px;
+    }
+}
+@media only screen and (max-width:320px) {
+    #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:240px}
+    #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:240px;font-size:20px;padding:10px;border-radius:10px;}
+    #signin h5{color:white;margin: 5%;}
+    #signin .form-log{border: 1px solid white;border-radius: 10px;background-color: inherit;opacity: 1;width:90%;padding:10px;margin:0 5% ;}
+    .sign-submit{margin-left: 5%;margin-bottom: 20px;width:100px;padding:20px;}
+    .sign-submit2{
+        margin-left: 10px;
+    }
+}
