@@ -32,6 +32,9 @@ if(isset($_GET['page'])){
             case('signin'):
                 echo 'Sign In';
                 break;
+            case('key'):
+                echo 'Keyword';
+                break;
             default;
                 echo 'Error 404 : Not ID';
         }
