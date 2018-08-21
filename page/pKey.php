@@ -4,7 +4,8 @@
  * User: nhoxk
  * Date: 8/15/2018
  * Time: 11:31 AM
- */ /*
+ */
+/*
 <div class="pKey">
     <div>
         <div id="form" >
@@ -136,3 +137,43 @@
     //     document.getElementById("keyword").style.height=h+"px";
     // }
 //</script>
+
+?>
+
+<div id="pKey" style="width: 100%;margin: 0 auto;padding:70px 20px 70px 20px;">
+    <div id="key" style="width: 100%; margin:0;padding: 0;border: 1px solid white; border-radius: 10px;">
+        <div id="bgkey" style="width: 100%;margin:0;padding:0;background-color: white;opacity: 0.2;border-radius: 10px"></div>
+        <div id="header" style="width: 100%;margin:0;padding:20px 0;border-bottom: 1px solid white"></div>
+        <div id="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6"></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="width: 100%;margin:0;padding:20px 0;border-top: 1px solid white;"></div>
+    </div>
+</div>
+
+<script>
+    window.load=from();//khi window load thì load hàm form
+    document.addEventListener("resize",from);//bắt sự kiện resize cảu hàm from
+    function from(){
+    var y=window.innerHeight;
+    var h=y/100*85;
+    document.getElementById("key").style.height=h+"px";
+    // lấy width của id key
+    var key_w=document.getElementById("key");
+    var bgkey_w=key_w.clientWidth;
+    // lấy width và height của key gán cho chiều cao id bgkey để làm background
+    document.getElementById("bgkey").style.height=h+"px";
+    document.getElementById("bgkey").style.width=bgkey_w+"px";
+    // chiều cao của id header footer là 60px
+    var height_h_f=60;
+    document.getElementById("header").style.height=height_h_f+"px";
+    document.getElementById("footer").style.height=height_h_f+"px";
+    //chiều cao id content bằng chiều cao id key - chiều cao của id header footer
+    document.getElementById("content").style.height=h-height_h_f*2+"px";
+    }
+</script>
