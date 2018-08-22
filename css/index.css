@@ -638,6 +638,7 @@ section form button span{
 #key{width: 100%; margin:0;padding: 0;position: relative;z-index: 1}
 #bgkey{width: 100%;margin:0;padding:0;background-color: white;opacity: 0.2;border-radius: 10px;position:absolute;z-index: 1}
 #header{width: 100%;margin:0;padding:10px 0;border-bottom: 1px solid white;position: relative;z-index: 1}
+#header h5{float: left;line-height: 35px;padding-left: 20px}
 #header a{float:right;font-size: 25px;margin-right: 25px;text-decoration: none;list-style-type: none;color:white;font-weight: bolder;opacity: 0.5}
 #header a:hover{opacity: 1;cursor:pointer}
 #content{position: relative;z-index: 2;}
@@ -646,7 +647,10 @@ section form button span{
 #footer a{text-decoration: none;list-style-type: none ;color:white;cursor: pointer;}
 #footer a:hover{cursor: pointer;}
 
-@media only screen and (max-width:380px) {}
+@media only screen and (max-width:380px) {
+    #header h5{float: left;line-height: 40px;padding-left: 10px; font-size: 15px}
+    #header a{margin-right: 15px;}
+}
 @media only screen and (max-width:360px) {
     #signin form {border:1px white solid;border-radius: 10px;border-top:none;width:280px}
     #signin h2{color:#00ffba;text-align: center;background-color: white;height: 40px;width:280px;font-size:20px;padding:10px;border-radius:10px;}

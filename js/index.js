@@ -22,7 +22,6 @@ function backgroundimages(){
 //****************  script menu  ***************//
 /************************************************/
 document.addEventListener("input",menu);
-document.getElementById("sidebarMenu").addEventListener("transitionend",menu);
 function menu(){
     var check=document.getElementById('checkbox').checked;
     if( check == true){
@@ -59,3 +58,4 @@ function menu(){
         document.getElementById("sidebarMenu").style.display="none";
     }
 }
+
