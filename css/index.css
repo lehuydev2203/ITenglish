@@ -637,12 +637,12 @@ section form button span{
 #pKey{width: 100%;margin: 0 auto;padding:70px 20px 70px 20px; color:white}
 #key{width: 100%; margin:0;padding: 0;position: relative;z-index: 1}
 #bgkey{width: 100%;margin:0;padding:0;background-color: white;opacity: 0.2;border-radius: 10px;position:absolute;z-index: 1}
-#header{width: 100%;margin:0;padding:10px 0;border-bottom: 1px solid white;position: relative;z-index: 1}
+#header{width: 100%;margin:0;padding:10px 0;border-bottom: 1px solid white;position: relative;z-index: 2}
 #header h5{float: left;line-height: 35px;padding-left: 20px}
 #header a{float:right;font-size: 25px;margin-right: 25px;text-decoration: none;list-style-type: none;color:white;font-weight: bolder;opacity: 0.5}
 #header a:hover{opacity: 1;cursor:pointer}
 #content{position: relative;z-index: 2;}
-#footer{width: 100%;margin:0;padding:10px 0;border-top: 1px solid white;position: relative;z-index: 1}
+#footer{width: 100%;margin:0;padding:10px 0;border-top: 1px solid white;position: relative;z-index: 2}
 #footer h6{text-align: center;line-height:35px;float:right;margin-right: 20px}
 #footer a{text-decoration: none;list-style-type: none ;color:white;cursor: pointer;}
 #footer a:hover{cursor: pointer;}
@@ -673,32 +673,46 @@ section form button span{
 }
 
 /************************************************/
-/****************  #Main keyword ****************/
+/****************  #Main Contact ****************/
 /************************************************/
 
 #contact {margin:0;padding:20px 10px 80px 10px;width: 100%;}
 #mail {padding: 20px 10px 20px 20px;}
+#form h5{padding-left:15px}
+#form h1{text-align: center;font-size: 70px;margin-bottom: 30px}
 #form-mail {border: 1px solid white;border-radius: 10px; color:white;margin:auto}
 #form-mail input {height:40px;width: 95%;margin:0px 15px;border:0;outline: none}
-.style-input{ width: 100%;border-radius:40px; background-color: white ;height: 50px;padding:5px}
-#comment {}
-#form-comment {}
-#note{border-radius: 20px;width: 100%;padding:30px;outline: none;}
-.send{
-    margin-left:15px;
-    width:80px;
-    height:40px;
-    border-radius: 10px;
-    border:2px solid white;
-    color: white;
-    background:inherit;
-}
-.send:hover{
-    border:2px solid inherit;
-    color:black;
-    background:white;
-    font-weight: bold;
-}
-.style-button{
-    margin-top: 50px;float:right
+.style-input{ width: 100%;border-radius:40px; background-color: white ;height: 50px;padding:5px;margin-bottom: 30px}
+#comment {padding: 20px 20px 20px 10px;}
+#form-comment {border: 1px solid white;border-radius: 10px;padding: 30px;}
+#border{z-index: 3;position: relative;}
+#commentbg{background-color: white;opacity: 0.3; border:1px solid white ; border-radius: 10px;height: 100%;position: absolute;z-index: 3}
+#content-comment{position:relative;z-index: 3; border:1px solid white ; border-radius: 10px;width: 80%;height:100%}
+#form-comment-customer{border:1px solid white;border-radius:10px ;padding:20px;position: relative;z-index: 3}
+#form-comment-customer h5 {text-align: left;color:white;}
+#form-comment-customer textarea {width: 100%;height: 38%;resize: none;padding: 5px 10px 5px 10px;border-radius: 10px;outline: none}
+#form-comment-customer button {float:right;margin-top: 10px}
+#result{height:67%;position: relative;z-index: 3;padding:10px}
+#note{border-radius: 10px;width: 100%;padding: 0 10px;outline: none;resize: none;margin: 10px 0;border:0}
+.send{margin-left:15px;width:80px;height:40px;border-radius: 10px;border:2px solid white;color: white;background:inherit;}
+.send:hover{border:2px solid inherit;color:black;background:white;font-weight: bold;}
+.style-button{margin-top: 50px;float:right}
+#outborder{overflow-y: scroll;width:100%}
+#inborder{padding: 10px;}
+.customer-comment{border: 1px solid white;border-radius: 10px ;padding: 10px 0;margin-bottom: 10px;}
+.customer-comment .title{margin-bottom: 20px}
+@media only screen and (max-width:1138px) {
+    .style-button{margin-top: 15px;float:right}
+}@media only screen and (max-width:1075px) {
+    .style-button{margin-top: 15px;float:right}
+    #form h1{text-align: center;font-size: 40px;margin-bottom: 10px}
+    .style-input{ width: 100%;border-radius:40px; background-color: white ;height: 50px;padding:5px;margin-bottom: 10px}
+    #contact {margin:0;padding:20px 0px 80px 0px;width: 100%;}
+    #mail {padding: 10px 5px 10px 10px;}
+    #comment {padding:10px 10px 10px 5px;}
+    #form-comment {border: 1px solid white;border-radius: 10px;padding: 10px;}
+    #result{height:60%;position: relative;z-index: 3;padding:10px}
+    #inborder{padding: 5px;}
+    #form-comment-customer button{margin-top: 5px}
+
 }
