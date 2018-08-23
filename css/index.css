@@ -671,3 +671,34 @@ section form button span{
         margin-left: 10px;
     }
 }
+
+/************************************************/
+/****************  #Main keyword ****************/
+/************************************************/
+
+#contact {margin:0;padding:20px 10px 80px 10px;width: 100%;}
+#mail {padding: 20px 10px 20px 20px;}
+#form-mail {border: 1px solid white;border-radius: 10px; color:white;margin:auto}
+#form-mail input {height:40px;width: 95%;margin:0px 15px;border:0;outline: none}
+.style-input{ width: 100%;border-radius:40px; background-color: white ;height: 50px;padding:5px}
+#comment {}
+#form-comment {}
+#note{border-radius: 20px;width: 100%;padding:30px;outline: none;}
+.send{
+    margin-left:15px;
+    width:80px;
+    height:40px;
+    border-radius: 10px;
+    border:2px solid white;
+    color: white;
+    background:inherit;
+}
+.send:hover{
+    border:2px solid inherit;
+    color:black;
+    background:white;
+    font-weight: bold;
+}
+.style-button{
+    margin-top: 50px;float:right
+}
