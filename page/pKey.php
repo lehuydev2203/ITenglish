@@ -166,7 +166,8 @@
             }else{
                 //ngược lại thì ẩn thanh scroll đi
                 document.getElementById("keyword").style.overflowY="hidden";}
-    }else if(x<=480){
+    }else
+        if(x<=480){
             //định dạng form
             ////chiều cao cho header & footer 60px
             document.getElementById("header").style.height=height_h_f+"px";
@@ -208,7 +209,8 @@
             var content=document.getElementById("content");
             var h_content=content.clientHeight;
             document.getElementById("bgkey").style.height=height_h_f*2+h_content+"px";
-    }else if(x<=568){
+    }else
+        if(x<=568){
             //định dạng form
             ////chiều cao cho header & footer 60px
             document.getElementById("header").style.height=height_h_f+"px";
@@ -250,7 +252,8 @@
             var content=document.getElementById("content");
             var h_content=content.clientHeight;
             document.getElementById("bgkey").style.height=height_h_f*2+h_content+"px";
-    }else if(x<=690){
+    }else
+        if(x<=690){
             //định dạng form
             ////chiều cao cho header & footer 60px
             document.getElementById("header").style.height=height_h_f+"px";
@@ -292,7 +295,8 @@
             var content=document.getElementById("content");
             var h_content=content.clientHeight;
             document.getElementById("bgkey").style.height=height_h_f*2+h_content+"px";
-    }else if(x<=768){
+    }else
+        if(x<=768){
             //định dạng form
             ////chiều cao cho header & footer 60px
             document.getElementById("header").style.height=height_h_f+"px";
@@ -334,7 +338,8 @@
             var content=document.getElementById("content");
             var h_content=content.clientHeight;
             document.getElementById("bgkey").style.height=height_h_f*2+h_content+"px";
-    }else if(x<=853){
+    }else
+        if(x<=853){
             //định dạng form
             ////chiều cao cho header & footer 60px
             document.getElementById("header").style.height=height_h_f+"px";
@@ -376,7 +381,8 @@
             var content=document.getElementById("content");
             var h_content=content.clientHeight;
             document.getElementById("bgkey").style.height=height_h_f*2+h_content+"px";
-    }else if(x<=966){
+    }else
+        if(x<=966){
             //định dạng form
             ////chiều cao cho header & footer 60px
             document.getElementById("header").style.height=height_h_f+"px";
